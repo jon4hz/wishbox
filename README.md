@@ -29,6 +29,8 @@ netbox:
   forward_agent: yes
   # only list devices which have this role assigned
   filter_role: linux_server
+  # list only devices that are active inside netbox
+  only_active: yes
 ```
 
 ## Limitations
