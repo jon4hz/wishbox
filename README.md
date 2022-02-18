@@ -1,4 +1,5 @@
 # Wishbox
+[![docker](https://github.com/jon4hz/wishbox/actions/workflows/docker.yml/badge.svg)](https://github.com/jon4hz/wishbox/actions/workflows/docker.yml)  
 
 Generate a wishlist directory based on your [netbox](https://github.com/netbox-community/netbox) inventory.
 
@@ -6,6 +7,28 @@ Generate a wishlist directory based on your [netbox](https://github.com/netbox-c
 When starting wishbox, it queries the netbox api and generates the wishlist endpoints.  
 Wishbox will use the devices primary IP to connect to.  
 The ssh port is 22 by default. To overwrite this, you can define a netbox service for the host called `ssh`.
+
+## Installation
+### Docker-compose
+```yaml
+---
+version: "3.8"
+services:
+  wishbox:
+    image: ghcr.io/jon4hz/wishbox:latest
+    restart: unless-stopped
+    volumes:
+      - ./config.yml:/app/config.yml
+      - .wishlist:/app/.wishlist
+    ports:
+      - "22:2223"
+```
+### Build from source
+```
+git clone https://github.com/jon4hz/wishbox.git
+go build .
+./wishbox
+```
 
 ## Configuration
 The configuration is loaded from the `./config.yml` file by default.
