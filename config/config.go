@@ -20,6 +20,7 @@ type Netbox struct {
 	FilterRole   string `yaml:"filter_role"`
 	User         string `yaml:"user"`
 	ForwardAgent bool   `yaml:"forward_agent"`
+	OnlyActive   bool   `yaml:"only_active"`
 }
 
 const defaultConfigFile = "./config.yml"

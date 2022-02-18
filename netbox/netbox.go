@@ -47,6 +47,9 @@ func GetInventory(cfg *config.Netbox) ([]*wishlist.Endpoint, error) {
 func (c Client) getVirtualDevices() ([]*wishlist.Endpoint, error) {
 	req := virtualization.NewVirtualizationVirtualMachinesListParams()
 	req.Role = &c.cfg.FilterRole
+	if c.cfg.OnlyActive {
+		req.Status = &statusActive
+	}
 
 	res, err := c.c.Virtualization.VirtualizationVirtualMachinesList(req, nil)
 	if err != nil {
@@ -76,9 +79,14 @@ func (c Client) getVirtualDevices() ([]*wishlist.Endpoint, error) {
 	return endpoints, nil
 }
 
+var statusActive = "active"
+
 func (c Client) getDevices() ([]*wishlist.Endpoint, error) {
 	req := dcim.NewDcimDevicesListParams()
 	req.Role = &c.cfg.FilterRole
+	if c.cfg.OnlyActive {
+		req.Status = &statusActive
+	}
 
 	res, err := c.c.Dcim.DcimDevicesList(req, nil)
 	if err != nil {
@@ -110,11 +118,13 @@ func (c Client) getDevices() ([]*wishlist.Endpoint, error) {
 
 func (c Client) getSSHService(deviceID string, name string, isVirtual bool) (int64, error) {
 	req := ipam.NewIpamServicesListParams()
+
 	if isVirtual {
 		req.VirtualMachineID = &deviceID
 	} else {
 		req.DeviceID = &deviceID
 	}
+
 	req.Name = &name
 	res, err := c.c.Ipam.IpamServicesList(req, nil)
 	if err != nil {
