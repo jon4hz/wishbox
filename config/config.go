@@ -3,13 +3,15 @@ package config
 import (
 	"os"
 
+	"github.com/charmbracelet/wishlist"
 	"gopkg.in/yaml.v3"
 )
 
 type Config struct {
-	Listen string  `yaml:"listen"`
-	Port   int64   `yaml:"port"`
-	Netbox *Netbox `yaml:"netbox"`
+	Listen string          `yaml:"listen"`
+	Port   int64           `yaml:"port"`
+	Users  []wishlist.User `yaml:"users"`
+	Netbox *Netbox         `yaml:"netbox"`
 }
 
 type Netbox struct {

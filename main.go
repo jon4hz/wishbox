@@ -38,6 +38,7 @@ func main() {
 	wcfg := &wishlist.Config{
 		Listen: cfg.Listen,
 		Port:   cfg.Port,
+		Users:  cfg.Users,
 		Factory: func(e wishlist.Endpoint) (*ssh.Server, error) {
 			return wish.NewServer(
 				wish.WithAddress(e.Address),
