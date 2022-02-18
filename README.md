@@ -32,4 +32,5 @@ netbox:
 ```
 
 ## Limitations
+- The inventory is only generated when starting wishbox
 - Pagination isn't implemented (yet), so wishbox will return only the first 50 devices
