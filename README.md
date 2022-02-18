@@ -1,6 +1,6 @@
 # Wishbox
 
-Generate a wishlist directory based on your netbox inventory.
+Generate a wishlist directory based on your [netbox](https://github.com/netbox-community/netbox) inventory.
 
 ## How does it work?
 When starting wishbox, it queries the netbox api and generates the wishlist endpoints.  
@@ -25,7 +25,7 @@ netbox:
   token: supersecretapitoken
   # the user for the ssh connection (default is your current system user)
   user: toor
-  # forward the local ssh agent?
+  # forward the ssh agent?
   forward_agent: yes
   # only list devices which have this role assigned
   filter_role: linux_server
