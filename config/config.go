@@ -17,6 +17,7 @@ type Config struct {
 type Netbox struct {
 	Host         string `yaml:"host"`
 	Token        string `yaml:"token"`
+	IgnoreTLS    bool   `yaml:"ignore_tls"`
 	FilterRole   string `yaml:"filter_role"`
 	User         string `yaml:"user"`
 	ForwardAgent bool   `yaml:"forward_agent"`

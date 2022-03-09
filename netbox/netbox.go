@@ -1,7 +1,9 @@
 package netbox
 
 import (
+	"crypto/tls"
 	"fmt"
+	"net/http"
 	"strconv"
 	"strings"
 
@@ -23,7 +25,10 @@ type Client struct {
 
 // GetInventory generates endpoints based on the netbox inventory
 func GetInventory(cfg *config.Netbox) ([]*wishlist.Endpoint, error) {
-	transport := httptransport.New(cfg.Host, client.DefaultBasePath, []string{"https"})
+	httpClient := &http.Client{
+		Transport: &http.Transport{TLSClientConfig: &tls.Config{InsecureSkipVerify: cfg.IgnoreTLS}},
+	}
+	transport := httptransport.NewWithClient(cfg.Host, client.DefaultBasePath, []string{"https"}, httpClient)
 	transport.DefaultAuthentication = httptransport.APIKeyAuth("Authorization", "header", "Token "+cfg.Token)
 
 	c := Client{
