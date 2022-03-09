@@ -72,6 +72,10 @@ func (c Client) getVirtualDevices() ([]*wishlist.Endpoint, error) {
 			port = 22
 		}
 
+		if v.PrimaryIP == nil {
+			continue
+		}
+
 		ip := strings.Split(*v.PrimaryIP.Address, "/")[0]
 		endpoints = append(endpoints, &wishlist.Endpoint{
 			Name:         *v.Name,
@@ -107,6 +111,10 @@ func (c Client) getDevices() ([]*wishlist.Endpoint, error) {
 		}
 		if port == 0 {
 			port = 22
+		}
+
+		if v.PrimaryIP == nil {
+			continue
 		}
 
 		ip := strings.Split(*v.PrimaryIP.Address, "/")[0]
