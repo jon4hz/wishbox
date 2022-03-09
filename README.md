@@ -44,6 +44,8 @@ port: 2223
 netbox:
   # your netbox host
   host: my.netbox.net
+  # set to true to disable tls validation
+  ignore_tls: false
   # the netbox api token
   token: supersecretapitoken
   # the user for the ssh connection (default is your current system user)
