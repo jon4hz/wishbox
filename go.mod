@@ -5,7 +5,7 @@ go 1.17
 require (
 	github.com/charmbracelet/keygen v0.3.0
 	github.com/charmbracelet/wish v0.3.1
-	github.com/charmbracelet/wishlist v0.2.2
+	github.com/charmbracelet/wishlist v0.4.0
 	github.com/gliderlabs/ssh v0.3.3
 	github.com/go-openapi/runtime v0.23.0
 	github.com/netbox-community/go-netbox v0.0.0-20211207200101-e5afdff979ba
@@ -20,8 +20,8 @@ require (
 	github.com/atotto/clipboard v0.1.4 // indirect
 	github.com/caarlos0/sshmarshal v0.0.0-20220308164159-9ddb9f83c6b3 // indirect
 	github.com/charmbracelet/bubbles v0.10.3 // indirect
-	github.com/charmbracelet/bubbletea v0.20.0 // indirect
-	github.com/charmbracelet/lipgloss v0.4.0 // indirect
+	github.com/charmbracelet/bubbletea v0.20.1-0.20220412142310-3795c036c451 // indirect
+	github.com/charmbracelet/lipgloss v0.5.0 // indirect
 	github.com/containerd/console v1.0.3 // indirect
 	github.com/go-openapi/analysis v0.20.1 // indirect
 	github.com/go-openapi/errors v0.20.1 // indirect
@@ -43,6 +43,7 @@ require (
 	github.com/mitchellh/go-homedir v1.1.0 // indirect
 	github.com/mitchellh/mapstructure v1.4.1 // indirect
 	github.com/muesli/ansi v0.0.0-20211018074035-2e021307bc4b // indirect
+	github.com/muesli/cancelreader v0.2.0 // indirect
 	github.com/muesli/reflow v0.3.0 // indirect
 	github.com/muesli/termenv v0.11.1-0.20220212125758-44cd13922739 // indirect
 	github.com/oklog/ulid v1.3.1 // indirect
@@ -52,8 +53,8 @@ require (
 	go.mongodb.org/mongo-driver v1.7.3 // indirect
 	golang.org/x/crypto v0.0.0-20220307211146-efcb8507fb70 // indirect
 	golang.org/x/net v0.0.0-20211112202133-69e39bad7dc2 // indirect
-	golang.org/x/sys v0.0.0-20210630005230-0f9fa26af87c // indirect
-	golang.org/x/term v0.0.0-20210422114643-f5beecf764ed // indirect
+	golang.org/x/sys v0.0.0-20220209214540-3681064d5158 // indirect
+	golang.org/x/term v0.0.0-20210927222741-03fcf44c2211 // indirect
 	golang.org/x/text v0.3.7 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
