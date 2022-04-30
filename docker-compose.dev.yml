@@ -7,6 +7,7 @@ services:
     volumes:
       - ./config.yml:/app/config.yml
       - .wishlist:/app/.wishlist
+      - ./certs:/app/certs
     ports:
       - "2223:2223"
     
