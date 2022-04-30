@@ -3,8 +3,8 @@ module github.com/jon4hz/wishbox
 go 1.17
 
 require (
-	github.com/charmbracelet/keygen v0.2.1
-	github.com/charmbracelet/wish v0.2.0
+	github.com/charmbracelet/keygen v0.3.0
+	github.com/charmbracelet/wish v0.3.1
 	github.com/charmbracelet/wishlist v0.2.2
 	github.com/gliderlabs/ssh v0.3.3
 	github.com/go-openapi/runtime v0.23.0
@@ -18,6 +18,7 @@ require (
 	github.com/anmitsu/go-shlex v0.0.0-20200514113438-38f4b401e2be // indirect
 	github.com/asaskevich/govalidator v0.0.0-20200907205600-7a23bdc65eef // indirect
 	github.com/atotto/clipboard v0.1.4 // indirect
+	github.com/caarlos0/sshmarshal v0.0.0-20220308164159-9ddb9f83c6b3 // indirect
 	github.com/charmbracelet/bubbles v0.10.3 // indirect
 	github.com/charmbracelet/bubbletea v0.20.0 // indirect
 	github.com/charmbracelet/lipgloss v0.4.0 // indirect
@@ -39,7 +40,6 @@ require (
 	github.com/mailru/easyjson v0.7.6 // indirect
 	github.com/mattn/go-isatty v0.0.14 // indirect
 	github.com/mattn/go-runewidth v0.0.13 // indirect
-	github.com/mikesmitty/edkey v0.0.0-20170222072505-3356ea4e686a // indirect
 	github.com/mitchellh/go-homedir v1.1.0 // indirect
 	github.com/mitchellh/mapstructure v1.4.1 // indirect
 	github.com/muesli/ansi v0.0.0-20211018074035-2e021307bc4b // indirect
@@ -50,8 +50,8 @@ require (
 	github.com/rivo/uniseg v0.2.0 // indirect
 	github.com/sahilm/fuzzy v0.1.0 // indirect
 	go.mongodb.org/mongo-driver v1.7.3 // indirect
-	golang.org/x/crypto v0.0.0-20210817164053-32db794688a5 // indirect
-	golang.org/x/net v0.0.0-20210421230115-4e50805a0758 // indirect
+	golang.org/x/crypto v0.0.0-20220307211146-efcb8507fb70 // indirect
+	golang.org/x/net v0.0.0-20211112202133-69e39bad7dc2 // indirect
 	golang.org/x/sys v0.0.0-20210630005230-0f9fa26af87c // indirect
 	golang.org/x/term v0.0.0-20210422114643-f5beecf764ed // indirect
 	golang.org/x/text v0.3.7 // indirect
