@@ -5,7 +5,6 @@ import (
 
 	"github.com/charmbracelet/keygen"
 	"github.com/charmbracelet/wish"
-	"github.com/charmbracelet/wish/activeterm"
 	lm "github.com/charmbracelet/wish/logging"
 	"github.com/charmbracelet/wishlist"
 	"github.com/gliderlabs/ssh"
@@ -50,7 +49,6 @@ func main() {
 					append(
 						e.Middlewares, // this is the important bit: the middlewares from the endpoint
 						lm.Middleware(),
-						activeterm.Middleware(),
 					)...,
 				),
 			)
