@@ -11,7 +11,7 @@ import (
 
 	"github.com/charmbracelet/wishlist"
 	httptransport "github.com/go-openapi/runtime/client"
-	"github.com/jon4hz/wishbox/config"
+	"github.com/jon4hz/wishbox/internal/config"
 	"github.com/netbox-community/go-netbox/netbox/client"
 	"github.com/netbox-community/go-netbox/netbox/client/dcim"
 	"github.com/netbox-community/go-netbox/netbox/client/ipam"
@@ -25,11 +25,13 @@ type Client struct {
 	cfg *config.Netbox
 }
 
-// GetInventory generates endpoints based on the netbox inventory
+// GetInventory generates endpoints based on the netbox inventory.
 func GetInventory(cfg *config.Netbox) ([]*wishlist.Endpoint, error) {
 	var (
-		mTLSConfig = &tls.Config{}
-		certs      = x509.NewCertPool()
+		mTLSConfig = &tls.Config{
+			MinVersion: tls.VersionTLS12,
+		}
+		certs = x509.NewCertPool()
 	)
 
 	if cfg.CAPemData != nil {
@@ -81,7 +83,6 @@ func (c Client) getVirtualDevices() ([]*wishlist.Endpoint, error) {
 
 	endpoints := make([]*wishlist.Endpoint, 0, *res.GetPayload().Count)
 	for _, v := range res.GetPayload().Results {
-
 		port, err := c.getSSHService(strconv.Itoa(int(v.ID)), sshServiceName, true)
 		if err != nil {
 			return nil, err
@@ -122,7 +123,6 @@ func (c Client) getDevices() ([]*wishlist.Endpoint, error) {
 
 	endpoints := make([]*wishlist.Endpoint, 0, *res.GetPayload().Count)
 	for _, v := range res.GetPayload().Results {
-
 		port, err := c.getSSHService(strconv.Itoa(int(v.ID)), sshServiceName, true)
 		if err != nil {
 			return nil, err

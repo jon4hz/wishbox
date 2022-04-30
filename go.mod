@@ -8,6 +8,9 @@ require (
 	github.com/charmbracelet/wishlist v0.4.0
 	github.com/gliderlabs/ssh v0.3.3
 	github.com/go-openapi/runtime v0.24.0
+	github.com/muesli/coral v1.0.0
+	github.com/muesli/mango-coral v1.0.1
+	github.com/muesli/roff v0.1.0
 	github.com/netbox-community/go-netbox v0.0.0-20211207200101-e5afdff979ba
 	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b
 )
@@ -35,6 +38,7 @@ require (
 	github.com/go-stack/stack v1.8.1 // indirect
 	github.com/hashicorp/errwrap v1.0.0 // indirect
 	github.com/hashicorp/go-multierror v1.1.1 // indirect
+	github.com/inconshreveable/mousetrap v1.0.0 // indirect
 	github.com/josharian/intern v1.0.0 // indirect
 	github.com/lucasb-eyer/go-colorful v1.2.0 // indirect
 	github.com/mailru/easyjson v0.7.7 // indirect
@@ -44,12 +48,15 @@ require (
 	github.com/mitchellh/mapstructure v1.4.3 // indirect
 	github.com/muesli/ansi v0.0.0-20211018074035-2e021307bc4b // indirect
 	github.com/muesli/cancelreader v0.2.0 // indirect
+	github.com/muesli/mango v0.1.0 // indirect
+	github.com/muesli/mango-pflag v0.1.0 // indirect
 	github.com/muesli/reflow v0.3.0 // indirect
 	github.com/muesli/termenv v0.11.1-0.20220212125758-44cd13922739 // indirect
 	github.com/oklog/ulid v1.3.1 // indirect
 	github.com/opentracing/opentracing-go v1.2.0 // indirect
 	github.com/rivo/uniseg v0.2.0 // indirect
 	github.com/sahilm/fuzzy v0.1.0 // indirect
+	github.com/spf13/pflag v1.0.5 // indirect
 	go.mongodb.org/mongo-driver v1.8.3 // indirect
 	golang.org/x/crypto v0.0.0-20220307211146-efcb8507fb70 // indirect
 	golang.org/x/net v0.0.0-20220127200216-cd36cc0744dd // indirect
