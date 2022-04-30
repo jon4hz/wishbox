@@ -4,3 +4,6 @@ config.yml
 LICENSE
 README.md
 certs
+dist
+completions
+manpages
