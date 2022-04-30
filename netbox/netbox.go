@@ -2,6 +2,8 @@ package netbox
 
 import (
 	"crypto/tls"
+	"crypto/x509"
+	"errors"
 	"fmt"
 	"net/http"
 	"strconv"
@@ -25,8 +27,24 @@ type Client struct {
 
 // GetInventory generates endpoints based on the netbox inventory
 func GetInventory(cfg *config.Netbox) ([]*wishlist.Endpoint, error) {
+	var (
+		mTLSConfig = &tls.Config{}
+		certs      = x509.NewCertPool()
+	)
+
+	if cfg.CAPemData != nil {
+		if ok := certs.AppendCertsFromPEM(cfg.CAPemData); !ok {
+			return nil, errors.New("failed to appent certs")
+		}
+		mTLSConfig.RootCAs = certs
+	}
+
+	if cfg.IgnoreTLS {
+		mTLSConfig.InsecureSkipVerify = true
+	}
+
 	httpClient := &http.Client{
-		Transport: &http.Transport{TLSClientConfig: &tls.Config{InsecureSkipVerify: cfg.IgnoreTLS}},
+		Transport: &http.Transport{TLSClientConfig: mTLSConfig},
 	}
 	transport := httptransport.NewWithClient(cfg.Host, client.DefaultBasePath, []string{"https"}, httpClient)
 	transport.DefaultAuthentication = httptransport.APIKeyAuth("Authorization", "header", "Token "+cfg.Token)

@@ -17,11 +17,13 @@ type Config struct {
 type Netbox struct {
 	Host         string `yaml:"host"`
 	Token        string `yaml:"token"`
-	IgnoreTLS    bool   `yaml:"ignore_tls"`
 	FilterRole   string `yaml:"filter_role"`
 	User         string `yaml:"user"`
 	ForwardAgent bool   `yaml:"forward_agent"`
 	OnlyActive   bool   `yaml:"only_active"`
+	CAFile       string `yaml:"ca_file"`
+	CAPemData    []byte `yaml:"-"`
+	IgnoreTLS    bool   `yaml:"ignore_tls"`
 }
 
 const defaultConfigFile = "./config.yml"
@@ -35,5 +37,16 @@ func Get() (*Config, error) {
 	if err := yaml.Unmarshal(f, &cfg); err != nil {
 		return nil, err
 	}
+	if err := cfg.loadCAFile(); err != nil {
+		return nil, err
+	}
 	return &cfg, nil
+}
+
+func (c *Config) loadCAFile() (err error) {
+	if c.Netbox.CAFile == "" {
+		return
+	}
+	c.Netbox.CAPemData, err = os.ReadFile(c.Netbox.CAFile)
+	return
 }
