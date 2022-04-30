@@ -1,5 +1,8 @@
 # Wishbox
-[![docker](https://github.com/jon4hz/wishbox/actions/workflows/docker.yml/badge.svg)](https://github.com/jon4hz/wishbox/actions/workflows/docker.yml)  
+[![goreleaser](https://github.com/jon4hz/wishbox/actions/workflows/goreleaser.yml/badge.svg)](https://github.com/jon4hz/wishbox/actions/workflows/goreleaser.yml)
+[![lint](https://github.com/jon4hz/wishbox/actions/workflows/lint.yml/badge.svg)](https://github.com/jon4hz/wishbox/actions/workflows/lint.yml)
+[![Go Report Card](https://goreportcard.com/badge/github.com/jon4hz/wishbox)](https://goreportcard.com/report/github.com/jon4hz/wishbox)
+
 
 Generate a wishlist directory based on your [netbox](https://github.com/netbox-community/netbox) inventory.
 

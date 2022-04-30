@@ -3,7 +3,7 @@ services:
   wishbox:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.dev
     volumes:
       - ./config.yml:/app/config.yml
       - .wishlist:/app/.wishlist
