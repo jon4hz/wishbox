@@ -79,7 +79,7 @@ func root(cmd *coral.Command, args []string) error {
 			endpoints, err := netbox.GetInventory(cfg.Netbox)
 			if err != nil {
 				log.Println("error getting inventory:", err)
-				return
+				continue
 			}
 			log.Printf("updated %d endpoints\n", len(endpoints))
 			wcfg.EndpointChan <- endpoints
