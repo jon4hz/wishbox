@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"time"
 
 	"github.com/charmbracelet/keygen"
 	"github.com/charmbracelet/wish"
@@ -17,6 +18,8 @@ import (
 	mcoral "github.com/muesli/mango-coral"
 	"github.com/muesli/roff"
 )
+
+var refreshInterval = time.Minute * 5
 
 var rootCmd = &coral.Command{
 	Use:     "wishbox",
@@ -66,8 +69,22 @@ func root(cmd *coral.Command, args []string) error {
 				),
 			)
 		},
-		Endpoints: endpoints,
+		Endpoints:    endpoints,
+		EndpointChan: make(chan []*wishlist.Endpoint),
 	}
+
+	go func() {
+		ticker := time.NewTicker(refreshInterval)
+		for range ticker.C {
+			endpoints, err := netbox.GetInventory(cfg.Netbox)
+			if err != nil {
+				log.Println("error getting inventory:", err)
+				return
+			}
+			log.Printf("updated %d endpoints\n", len(endpoints))
+			wcfg.EndpointChan <- endpoints
+		}
+	}()
 
 	if err := wishlist.Serve(wcfg); err != nil {
 		log.Fatalln(err)
