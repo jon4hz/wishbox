@@ -1,9 +1,9 @@
-FROM golang:1.17 as builder
+FROM golang:1.18 as builder
 WORKDIR /app
 COPY go.mod go.sum ./
 RUN go mod download
 COPY . .
-RUN CGO_ENABLED=0 go build .
+RUN CGO_ENABLED=0 go build -o wishbox ./cmd/wishbox/main.go
 
 FROM alpine:latest
 WORKDIR /app
