@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	github.com/charmbracelet/keygen v0.3.0
-	github.com/charmbracelet/wish v0.4.0
+	github.com/charmbracelet/wish v0.5.0
 	github.com/gliderlabs/ssh v0.3.4
 	github.com/go-openapi/runtime v0.24.1
 	github.com/muesli/coral v1.0.0
