@@ -5,13 +5,14 @@ go 1.18
 require (
 	github.com/charmbracelet/keygen v0.3.0
 	github.com/charmbracelet/wish v0.5.0
+	github.com/charmbracelet/wishlist v0.6.0
 	github.com/gliderlabs/ssh v0.3.4
 	github.com/go-openapi/runtime v0.24.1
 	github.com/muesli/coral v1.0.0
 	github.com/muesli/mango-coral v1.0.1
 	github.com/muesli/roff v0.1.0
 	github.com/netbox-community/go-netbox v0.0.0-20211207200101-e5afdff979ba
-	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b
+	gopkg.in/yaml.v3 v3.0.1
 )
 
 require (
@@ -21,10 +22,9 @@ require (
 	github.com/asaskevich/govalidator v0.0.0-20210307081110-f21760c49a8d // indirect
 	github.com/atotto/clipboard v0.1.4 // indirect
 	github.com/caarlos0/sshmarshal v0.1.0 // indirect
-	github.com/charmbracelet/bubbles v0.10.3 // indirect
-	github.com/charmbracelet/bubbletea v0.20.1-0.20220412142310-3795c036c451 // indirect
+	github.com/charmbracelet/bubbles v0.11.0 // indirect
+	github.com/charmbracelet/bubbletea v0.21.0 // indirect
 	github.com/charmbracelet/lipgloss v0.5.0 // indirect
-	github.com/charmbracelet/wishlist v0.4.1-0.20220510181402-7205ff92f8b7
 	github.com/containerd/console v1.0.3 // indirect
 	github.com/go-openapi/analysis v0.21.2 // indirect
 	github.com/go-openapi/errors v0.20.2 // indirect
@@ -36,6 +36,7 @@ require (
 	github.com/go-openapi/swag v0.21.1 // indirect
 	github.com/go-openapi/validate v0.21.0 // indirect
 	github.com/go-stack/stack v1.8.1 // indirect
+	github.com/gobwas/glob v0.2.3 // indirect
 	github.com/hashicorp/errwrap v1.0.0 // indirect
 	github.com/hashicorp/go-multierror v1.1.1 // indirect
 	github.com/inconshreveable/mousetrap v1.0.0 // indirect
