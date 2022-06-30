@@ -36,6 +36,8 @@ github.com/charmbracelet/wishlist v0.6.0 h1:S+hWs/ldTjcuipJzGRgHWrcpTfyZxeELhv+l
 github.com/charmbracelet/wishlist v0.6.0/go.mod h1:aSkolgY0dc43jYAev8e5p5R6dkaPYB01KCWcjKwPcSk=
 github.com/charmbracelet/wishlist v0.6.1-0.20220630125035-b0ee90c89be1 h1:2YpwkmLQx0AbUusVZYsh0kdD5BpXYAe9hoJTGigy1u8=
 github.com/charmbracelet/wishlist v0.6.1-0.20220630125035-b0ee90c89be1/go.mod h1:GR9uVL+0BbtKjwKHUwjhZv7v9+gw5JYL4rSsPKYkRG8=
+github.com/charmbracelet/wishlist v0.6.1-0.20220630171736-7ed59f75e605 h1:aScNXnwGFbj4BuxmhKu8rPmkqBGm37qjJTJjpMTMBj0=
+github.com/charmbracelet/wishlist v0.6.1-0.20220630171736-7ed59f75e605/go.mod h1:GR9uVL+0BbtKjwKHUwjhZv7v9+gw5JYL4rSsPKYkRG8=
 github.com/containerd/console v1.0.3 h1:lIr7SlA5PxZyMV30bDW0MGbiOPXwc63yRuCP0ARubLw=
 github.com/containerd/console v1.0.3/go.mod h1:7LqA/THxQ86k76b8c/EMSiaJ3h1eZkMkXar0TQ1gf3U=
 github.com/cpuguy83/go-md2man/v2 v2.0.1/go.mod h1:tgQtvFlXSQOSOSIRvRPT7W67SCa46tRHOmNcaadrF8o=
