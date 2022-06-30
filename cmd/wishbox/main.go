@@ -25,28 +25,28 @@ var rootCmd = &coral.Command{
 	Use:     "wishbox",
 	Version: version.Version,
 	Short:   "wishlist using netbox as inventory source",
-	RunE:    root,
+	Run:     root,
 }
 
-func root(cmd *coral.Command, args []string) error {
+func root(cmd *coral.Command, args []string) {
 	k, err := keygen.New(".wishlist/server", nil, keygen.Ed25519)
 	if err != nil {
-		return err
+		log.Fatalf("failed to generate host keys: %v", err)
 	}
 	if !k.KeyPairExists() {
 		if err := k.WriteKeys(); err != nil {
-			return err
+			log.Fatalf("failed to write host keys: %v", err)
 		}
 	}
 
 	cfg, err := config.Get()
 	if err != nil {
-		return err
+		log.Fatalf("failed to get config: %v", err)
 	}
 
 	endpoints, err := netbox.GetInventory(cfg.Netbox)
 	if err != nil {
-		return err
+		log.Fatalf("failed to get initial inventory: %v", err)
 	}
 
 	// wishlist config
@@ -89,7 +89,6 @@ func root(cmd *coral.Command, args []string) error {
 	if err := wishlist.Serve(wcfg); err != nil {
 		log.Fatalln(err)
 	}
-	return nil
 }
 
 func main() {
