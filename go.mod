@@ -5,7 +5,7 @@ go 1.18
 require (
 	github.com/charmbracelet/keygen v0.3.0
 	github.com/charmbracelet/wish v0.5.0
-	github.com/charmbracelet/wishlist v0.6.0
+	github.com/charmbracelet/wishlist v0.6.1-0.20220630125035-b0ee90c89be1
 	github.com/gliderlabs/ssh v0.3.4
 	github.com/go-openapi/runtime v0.24.1
 	github.com/muesli/coral v1.0.0
@@ -22,8 +22,8 @@ require (
 	github.com/asaskevich/govalidator v0.0.0-20210307081110-f21760c49a8d // indirect
 	github.com/atotto/clipboard v0.1.4 // indirect
 	github.com/caarlos0/sshmarshal v0.1.0 // indirect
-	github.com/charmbracelet/bubbles v0.11.0 // indirect
-	github.com/charmbracelet/bubbletea v0.21.0 // indirect
+	github.com/charmbracelet/bubbles v0.12.0 // indirect
+	github.com/charmbracelet/bubbletea v0.22.0 // indirect
 	github.com/charmbracelet/lipgloss v0.5.0 // indirect
 	github.com/containerd/console v1.0.3 // indirect
 	github.com/go-openapi/analysis v0.21.2 // indirect
@@ -48,7 +48,7 @@ require (
 	github.com/mitchellh/go-homedir v1.1.0 // indirect
 	github.com/mitchellh/mapstructure v1.4.3 // indirect
 	github.com/muesli/ansi v0.0.0-20211018074035-2e021307bc4b // indirect
-	github.com/muesli/cancelreader v0.2.0 // indirect
+	github.com/muesli/cancelreader v0.2.2 // indirect
 	github.com/muesli/mango v0.1.0 // indirect
 	github.com/muesli/mango-pflag v0.1.0 // indirect
 	github.com/muesli/reflow v0.3.0 // indirect
