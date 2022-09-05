@@ -6,7 +6,7 @@ require (
 	github.com/charmbracelet/keygen v0.3.0
 	github.com/charmbracelet/wish v0.5.0
 	github.com/charmbracelet/wishlist v0.6.1-0.20220630171736-7ed59f75e605
-	github.com/gliderlabs/ssh v0.3.4
+	github.com/gliderlabs/ssh v0.3.5
 	github.com/go-openapi/runtime v0.24.1
 	github.com/muesli/coral v1.0.0
 	github.com/muesli/mango-coral v1.0.1
@@ -60,10 +60,10 @@ require (
 	github.com/spf13/pflag v1.0.5 // indirect
 	github.com/teivah/broadcast v0.1.0 // indirect
 	go.mongodb.org/mongo-driver v1.8.3 // indirect
-	golang.org/x/crypto v0.0.0-20220307211146-efcb8507fb70 // indirect
-	golang.org/x/net v0.0.0-20220127200216-cd36cc0744dd // indirect
-	golang.org/x/sys v0.0.0-20220209214540-3681064d5158 // indirect
-	golang.org/x/term v0.0.0-20210927222741-03fcf44c2211 // indirect
+	golang.org/x/crypto v0.0.0-20220826181053-bd7e27e6170d // indirect
+	golang.org/x/net v0.0.0-20220826154423-83b083e8dc8b // indirect
+	golang.org/x/sys v0.0.0-20220825204002-c680a09ffe64 // indirect
+	golang.org/x/term v0.0.0-20220722155259-a9ba230a4035 // indirect
 	golang.org/x/text v0.3.7 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
