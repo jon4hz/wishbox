@@ -7,10 +7,10 @@ import (
 	"time"
 
 	"github.com/charmbracelet/keygen"
+	"github.com/charmbracelet/ssh"
 	"github.com/charmbracelet/wish"
 	lm "github.com/charmbracelet/wish/logging"
 	"github.com/charmbracelet/wishlist"
-	"github.com/gliderlabs/ssh"
 	"github.com/jon4hz/wishbox/internal/config"
 	"github.com/jon4hz/wishbox/internal/netbox"
 	"github.com/jon4hz/wishbox/internal/version"
