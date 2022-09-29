@@ -11,7 +11,7 @@ require (
 	github.com/muesli/coral v1.0.0
 	github.com/muesli/mango-coral v1.0.1
 	github.com/muesli/roff v0.1.0
-	github.com/netbox-community/go-netbox v0.0.0-20211207200101-e5afdff979ba
+	github.com/netbox-community/go-netbox v0.0.0-20220627164555-1099c67af5a7
 	gopkg.in/yaml.v3 v3.0.1
 )
 
