@@ -123,7 +123,7 @@ func (c Client) getDevices() ([]*wishlist.Endpoint, error) {
 
 	endpoints := make([]*wishlist.Endpoint, 0, *res.GetPayload().Count)
 	for _, v := range res.GetPayload().Results {
-		port, err := c.getSSHService(strconv.Itoa(int(v.ID)), sshServiceName, true)
+		port, err := c.getSSHService(strconv.Itoa(int(v.ID)), sshServiceName, false)
 		if err != nil {
 			return nil, err
 		}
