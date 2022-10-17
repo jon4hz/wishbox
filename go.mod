@@ -7,7 +7,7 @@ require (
 	github.com/charmbracelet/wish v0.5.0
 	github.com/charmbracelet/wishlist v0.6.1-0.20220630171736-7ed59f75e605
 	github.com/gliderlabs/ssh v0.3.5
-	github.com/go-openapi/runtime v0.24.1
+	github.com/go-openapi/runtime v0.24.2
 	github.com/muesli/coral v1.0.0
 	github.com/muesli/mango-coral v1.0.1
 	github.com/muesli/roff v0.1.0
