@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	github.com/charmbracelet/keygen v0.3.0
-	github.com/charmbracelet/wish v0.5.0
+	github.com/charmbracelet/wish v0.6.0
 	github.com/charmbracelet/wishlist v0.6.1-0.20220630171736-7ed59f75e605
 	github.com/gliderlabs/ssh v0.3.5
 	github.com/go-openapi/runtime v0.24.2
@@ -23,8 +23,8 @@ require (
 	github.com/atotto/clipboard v0.1.4 // indirect
 	github.com/caarlos0/sshmarshal v0.1.0 // indirect
 	github.com/charmbracelet/bubbles v0.12.0 // indirect
-	github.com/charmbracelet/bubbletea v0.22.0 // indirect
-	github.com/charmbracelet/lipgloss v0.5.0 // indirect
+	github.com/charmbracelet/bubbletea v0.22.1 // indirect
+	github.com/charmbracelet/lipgloss v0.6.0 // indirect
 	github.com/containerd/console v1.0.3 // indirect
 	github.com/go-openapi/analysis v0.21.2 // indirect
 	github.com/go-openapi/errors v0.20.2 // indirect
@@ -43,7 +43,8 @@ require (
 	github.com/josharian/intern v1.0.0 // indirect
 	github.com/lucasb-eyer/go-colorful v1.2.0 // indirect
 	github.com/mailru/easyjson v0.7.7 // indirect
-	github.com/mattn/go-isatty v0.0.14 // indirect
+	github.com/mattn/go-isatty v0.0.16 // indirect
+	github.com/mattn/go-localereader v0.0.1 // indirect
 	github.com/mattn/go-runewidth v0.0.13 // indirect
 	github.com/mitchellh/go-homedir v1.1.0 // indirect
 	github.com/mitchellh/mapstructure v1.4.3 // indirect
