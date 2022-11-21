@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	github.com/charmbracelet/keygen v0.3.0
-	github.com/charmbracelet/wish v0.6.0
+	github.com/charmbracelet/wish v0.7.0
 	github.com/charmbracelet/wishlist v0.6.1-0.20220630171736-7ed59f75e605
 	github.com/gliderlabs/ssh v0.3.5
 	github.com/go-openapi/runtime v0.24.2
@@ -21,9 +21,10 @@ require (
 	github.com/anmitsu/go-shlex v0.0.0-20200514113438-38f4b401e2be // indirect
 	github.com/asaskevich/govalidator v0.0.0-20210307081110-f21760c49a8d // indirect
 	github.com/atotto/clipboard v0.1.4 // indirect
+	github.com/aymanbagabas/go-osc52 v1.0.3 // indirect
 	github.com/caarlos0/sshmarshal v0.1.0 // indirect
 	github.com/charmbracelet/bubbles v0.12.0 // indirect
-	github.com/charmbracelet/bubbletea v0.22.1 // indirect
+	github.com/charmbracelet/bubbletea v0.23.1 // indirect
 	github.com/charmbracelet/lipgloss v0.6.0 // indirect
 	github.com/containerd/console v1.0.3 // indirect
 	github.com/go-openapi/analysis v0.21.2 // indirect
@@ -45,7 +46,7 @@ require (
 	github.com/mailru/easyjson v0.7.7 // indirect
 	github.com/mattn/go-isatty v0.0.16 // indirect
 	github.com/mattn/go-localereader v0.0.1 // indirect
-	github.com/mattn/go-runewidth v0.0.13 // indirect
+	github.com/mattn/go-runewidth v0.0.14 // indirect
 	github.com/mitchellh/go-homedir v1.1.0 // indirect
 	github.com/mitchellh/mapstructure v1.4.3 // indirect
 	github.com/muesli/ansi v0.0.0-20211018074035-2e021307bc4b // indirect
@@ -53,7 +54,7 @@ require (
 	github.com/muesli/mango v0.1.0 // indirect
 	github.com/muesli/mango-pflag v0.1.0 // indirect
 	github.com/muesli/reflow v0.3.0 // indirect
-	github.com/muesli/termenv v0.11.1-0.20220212125758-44cd13922739 // indirect
+	github.com/muesli/termenv v0.13.0 // indirect
 	github.com/oklog/ulid v1.3.1 // indirect
 	github.com/opentracing/opentracing-go v1.2.0 // indirect
 	github.com/rivo/uniseg v0.2.0 // indirect
