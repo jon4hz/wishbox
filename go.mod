@@ -7,7 +7,7 @@ require (
 	github.com/charmbracelet/ssh v0.0.0-20221117183211-483d43d97103
 	github.com/charmbracelet/wish v1.1.0
 	github.com/charmbracelet/wishlist v0.10.0
-	github.com/go-openapi/runtime v0.25.0
+	github.com/go-openapi/runtime v0.26.0
 	github.com/muesli/coral v1.0.0
 	github.com/muesli/mango-coral v1.0.1
 	github.com/muesli/roff v0.1.0
@@ -16,10 +16,8 @@ require (
 )
 
 require (
-	github.com/PuerkitoBio/purell v1.1.1 // indirect
-	github.com/PuerkitoBio/urlesc v0.0.0-20170810143723-de5bf2ad4578 // indirect
 	github.com/anmitsu/go-shlex v0.0.0-20200514113438-38f4b401e2be // indirect
-	github.com/asaskevich/govalidator v0.0.0-20210307081110-f21760c49a8d // indirect
+	github.com/asaskevich/govalidator v0.0.0-20230301143203-a9d515a09cc2 // indirect
 	github.com/atotto/clipboard v0.1.4 // indirect
 	github.com/aymanbagabas/go-osc52/v2 v2.0.1 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
@@ -34,16 +32,15 @@ require (
 	github.com/go-logfmt/logfmt v0.6.0 // indirect
 	github.com/go-logr/logr v1.2.3 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
-	github.com/go-openapi/analysis v0.21.2 // indirect
-	github.com/go-openapi/errors v0.20.2 // indirect
+	github.com/go-openapi/analysis v0.21.4 // indirect
+	github.com/go-openapi/errors v0.20.3 // indirect
 	github.com/go-openapi/jsonpointer v0.19.5 // indirect
-	github.com/go-openapi/jsonreference v0.19.6 // indirect
-	github.com/go-openapi/loads v0.21.1 // indirect
-	github.com/go-openapi/spec v0.20.4 // indirect
-	github.com/go-openapi/strfmt v0.21.2 // indirect
-	github.com/go-openapi/swag v0.21.1 // indirect
-	github.com/go-openapi/validate v0.21.0 // indirect
-	github.com/go-stack/stack v1.8.1 // indirect
+	github.com/go-openapi/jsonreference v0.20.0 // indirect
+	github.com/go-openapi/loads v0.21.2 // indirect
+	github.com/go-openapi/spec v0.20.8 // indirect
+	github.com/go-openapi/strfmt v0.21.7 // indirect
+	github.com/go-openapi/swag v0.22.3 // indirect
+	github.com/go-openapi/validate v0.22.1 // indirect
 	github.com/gobwas/glob v0.2.3 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/hashicorp/errwrap v1.0.0 // indirect
@@ -57,7 +54,7 @@ require (
 	github.com/mattn/go-runewidth v0.0.14 // indirect
 	github.com/matttproud/golang_protobuf_extensions v1.0.4 // indirect
 	github.com/mitchellh/go-homedir v1.1.0 // indirect
-	github.com/mitchellh/mapstructure v1.4.3 // indirect
+	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/muesli/ansi v0.0.0-20211018074035-2e021307bc4b // indirect
 	github.com/muesli/cancelreader v0.2.2 // indirect
 	github.com/muesli/mango v0.1.0 // indirect
@@ -75,11 +72,10 @@ require (
 	github.com/sahilm/fuzzy v0.1.0 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
 	github.com/teivah/broadcast v0.1.0 // indirect
-	go.mongodb.org/mongo-driver v1.8.3 // indirect
-	go.opentelemetry.io/otel v1.11.1 // indirect
-	go.opentelemetry.io/otel/trace v1.11.1 // indirect
+	go.mongodb.org/mongo-driver v1.11.3 // indirect
+	go.opentelemetry.io/otel v1.14.0 // indirect
+	go.opentelemetry.io/otel/trace v1.14.0 // indirect
 	golang.org/x/crypto v0.7.0 // indirect
-	golang.org/x/net v0.8.0 // indirect
 	golang.org/x/sync v0.1.0 // indirect
 	golang.org/x/sys v0.6.0 // indirect
 	golang.org/x/term v0.6.0 // indirect
